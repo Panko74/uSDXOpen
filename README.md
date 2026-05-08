@@ -40,3 +40,5 @@ Note: there is an active online forum discussing the uSDX controlled by DL2MAN w
 Other groups on FB include "USDX USDR Radios", "(tr)USDX Open".
 
 73, Guido pe1nnz@amsat.org
+
+**The file usdxREDCORNERS_CW.ino contains firmware version 4.00d. This version restores all CW functions (e.g., Iambic modes) by disabling CAT control to accommodate memory limitations.**

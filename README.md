@@ -16,6 +16,7 @@ The ATmega328P has limited flash/RAM and CAT uses a large amount of memory, so e
 
 **Flashing**
 - Use only `usdxREDCORNERS_CW.ino` for the Red Corners model.
+- **Before flashing**, edit the `MY_CALLSIGN` (currently a `XXXXX` placeholder) and `MY_NAME` (currently `NAME`) fields in `usdxREDCORNERS_CW.ino` to your own callsign and name.
 - Upload via **Arduino as ISP** (menu: *Sketch → Upload Using Programmer*), not via serial bootloader.
 
 GW8RDI's Open firmware branch for all versions of the uSDX transceiver, built on original USDX open code.

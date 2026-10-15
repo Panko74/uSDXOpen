@@ -168,7 +168,7 @@ Global variables use 1499 bytes (73%) of dynamic memory, leaving 549 bytes for l
 #define MY_CALLSIGN_PADDED "DEBUG  "
 #else
 // Put your callsigne below and remove the "///" in front to activate.
-#define MY_CALLSIGN "IW5DUA"               // <----- Add your callsign here or enable line below, replacing G8RDI!  If you don´t want the LCD to show your callsign, enable the line "uSDR+" below.
+#define MY_CALLSIGN "XXXXX"               // <----- Add your callsign here or enable line below, replacing G8RDI!  If you don´t want the LCD to show your callsign, enable the line "uSDR+" below.
 
 #define MY_CALLSIGN_PADDED "USDR+  "      // <----- Also add your callsign here BUT keep the 2 spaces at the end!
 /// Disable below line if using your own callsign by adding // in front.
@@ -177,7 +177,7 @@ Global variables use 1499 bytes (73%) of dynamic memory, leaving 549 bytes for l
 //#define MY_PREFIX ""  // No prefix, use this line by removing the //, add below to replica line.
 #define MY_PREFIX ""    // Add visiting country prefix here
 
-#define MY_NAME "GIANLUCA"   // <---- *** ADD YOUR NAME HERE FOR CW MESSAGES
+#define MY_NAME "NAME"   // <---- *** ADD YOUR NAME HERE FOR CW MESSAGES
 #endif
 #define CALLSIGN_LENGTH 5       // Change length to match your callsign but remember the LCD isn't very wide!
 

@@ -1,4 +1,23 @@
 # uSDXOpen
+
+## About this fork (Panko74)
+
+This fork modifies **`usdxREDCORNERS_CW.ino`** (firmware version 4.00d) for the uSDX "Red Corners" model. All other `.ino` files are unchanged from the GW8RDI upstream.
+
+**What changed**
+- Restored the full CW functionality, including the **Iambic keyer** (Iambic A, Iambic B and Single modes).
+- Enabled `KEYER`, `KEY_CLICK` (key-click envelope shaping) and the 700 Hz CW filter.
+
+**What was removed**
+- The **CAT interface** is disabled (`CAT`, `CAT_EXT`, `CAT_STREAMING`, `CAT_FAST` and related options are commented out) to free program memory on the ATmega328P.
+
+**Why**
+The ATmega328P has limited flash/RAM and CAT uses a large amount of memory, so enabling CW (especially the Iambic keyer) forces a trade-off. This build favours CW.
+
+**Flashing**
+- Use only `usdxREDCORNERS_CW.ino` for the Red Corners model.
+- Upload via **Arduino as ISP** (menu: *Sketch → Upload Using Programmer*), not via serial bootloader.
+
 GW8RDI's Open firmware branch for all versions of the uSDX transceiver, built on original USDX open code.
 Branched from https://github.com/threeme3/usdx  Copyright 2019, 2020, 2021   Guido PE1NNZ <pe1nnz@amsat.org>
 Credits: Guido PE1NNZ, Dan Tayloe N7VE (http://norcalqrp.org/files/Tayloe_mixer_x3a.pdf), DL2MAN, and many others
@@ -40,5 +59,3 @@ Note: there is an active online forum discussing the uSDX controlled by DL2MAN w
 Other groups on FB include "USDX USDR Radios", "(tr)USDX Open".
 
 73, Guido pe1nnz@amsat.org
-
-**The file usdxREDCORNERS_CW.ino contains firmware version 4.00d. This version restores all CW functions (e.g., Iambic modes) by disabling CAT control to accommodate memory limitations.**

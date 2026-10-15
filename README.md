@@ -18,6 +18,7 @@ The ATmega328P has limited flash/RAM and CAT uses a large amount of memory, so e
 - Use only `usdxREDCORNERS_CW.ino` for the Red Corners model.
 - **Before flashing**, edit the `MY_CALLSIGN` (currently a `XXXXX` placeholder) and `MY_NAME` (currently `NAME`) fields in `usdxREDCORNERS_CW.ino` to your own callsign and name.
 - Upload via **Arduino as ISP** (menu: *Sketch → Upload Using Programmer*), not via serial bootloader.
+- Watch this video for a step-by-step flashing guide: https://www.youtube.com/watch?v=GiPMQOFkG_o
 
 ## Credits
 
